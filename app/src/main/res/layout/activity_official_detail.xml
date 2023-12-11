@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Cons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".officialDetailActivity">
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="251dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:onClick="openWebsite"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/weblabel"
+        app:layout_constraintTop_toTopOf="@+id/weblabel" />
+
+    <TextView
+        android:id="@+id/weblabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        android:text="Website:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emaillabel" />
+
+    <ImageView
+        android:id="@+id/ofcPicture"
+        android:layout_width="150dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="24dp"
+        android:onClick="photoClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/missing" />
+
+    <ImageView
+        android:id="@+id/partyPicture"
+        android:layout_width="58dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="184dp"
+        android:onClick="openWebSite2"
+        app:layout_constraintEnd_toEndOf="@+id/ofcPicture"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/ofcPicture"
+        app:layout_constraintTop_toTopOf="@+id/ofcPicture"
+        app:srcCompat="@drawable/dem_logo" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="211dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ofcPicture"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Office"
+        android:layout_width="211dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/ofcPicture"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+    <TextView
+        android:id="@+id/Party"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/ofcPicture"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Office" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="67dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:onClick="openFacebook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Party"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/Twitter"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="44dp"
+        android:onClick="twitterClicked"
+        app:layout_constraintStart_toEndOf="@+id/facebook"
+        app:layout_constraintTop_toTopOf="@+id/facebook"
+        app:srcCompat="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/Youtube"
+        android:layout_width="55dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="44dp"
+        android:onClick="youTubeClicked"
+        app:layout_constraintStart_toEndOf="@+id/Twitter"
+        app:layout_constraintTop_toTopOf="@+id/Twitter"
+        app:srcCompat="@drawable/youtube" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:text="Address:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Twitter" />
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="240dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="22dp"
+        android:onClick="clickMap"
+        android:text="TextView"
+        android:textColor="#FCFFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        android:text="Phone:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/Phone"
+        android:layout_width="252dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:onClick="clickCall"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/emaillabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        android:text="Email:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="260dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="36dp"
+        android:onClick="sendEmail"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/emaillabel"
+        app:layout_constraintTop_toTopOf="@+id/emaillabel" />
+
+    <TextView
+        android:id="@+id/locatoionDetail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#2F00FF"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/ofcPicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

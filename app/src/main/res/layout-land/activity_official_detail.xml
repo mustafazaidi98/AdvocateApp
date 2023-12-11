@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Cons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".officialDetailActivity">
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:onClick="openWebsite"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/weblabel"
+        app:layout_constraintEnd_toStartOf="@+id/ofcPicture"
+        app:layout_constraintStart_toEndOf="@+id/weblabel" />
+
+    <TextView
+        android:id="@+id/weblabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:text="Website:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emaillabel" />
+
+    <ImageView
+        android:id="@+id/ofcPicture"
+        android:layout_width="150dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="80dp"
+        android:onClick="photoClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/missing" />
+
+    <ImageView
+        android:id="@+id/partyPicture"
+        android:layout_width="58dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="184dp"
+        android:onClick="openWebSite2"
+        app:layout_constraintEnd_toEndOf="@+id/ofcPicture"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/ofcPicture"
+        app:layout_constraintTop_toTopOf="@+id/ofcPicture"
+        app:srcCompat="@drawable/dem_logo" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="362dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ofcPicture"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Office"
+        android:layout_width="372dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/ofcPicture"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+    <TextView
+        android:id="@+id/Party"
+        android:layout_width="192dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/ofcPicture"
+        app:layout_constraintTop_toBottomOf="@+id/locatoionDetail" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="39dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:onClick="openFacebook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weblabel"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/Twitter"
+        android:layout_width="39dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="84dp"
+        android:onClick="twitterClicked"
+        app:layout_constraintStart_toEndOf="@+id/facebook"
+        app:layout_constraintTop_toTopOf="@+id/facebook"
+        app:srcCompat="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/Youtube"
+        android:layout_width="38dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="84dp"
+        android:onClick="youTubeClicked"
+        app:layout_constraintStart_toEndOf="@+id/Twitter"
+        app:layout_constraintTop_toTopOf="@+id/Twitter"
+        app:srcCompat="@drawable/youtube" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:text="Address:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Office" />
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:onClick="clickMap"
+        android:text="fffffffffffffffffffff fffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffffffffffff"
+        android:textColor="#FCFFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/ofcPicture"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:text="Phone:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/Phone"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="38dp"
+        android:onClick="clickCall"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+        app:layout_constraintEnd_toStartOf="@+id/ofcPicture"
+        app:layout_constraintStart_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/emaillabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:text="Email:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:onClick="sendEmail"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/emaillabel"
+        app:layout_constraintEnd_toStartOf="@+id/ofcPicture"
+        app:layout_constraintStart_toEndOf="@+id/emaillabel" />
+
+    <TextView
+        android:id="@+id/locatoionDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2F00FF"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
